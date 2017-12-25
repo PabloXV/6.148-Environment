@@ -4,7 +4,7 @@ header {
   background: #ccc;
   background-image: url("../images/landscape.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: 0px -200px;
   height: 450px;
 }
 
@@ -24,6 +24,10 @@ a:hover {
   color: #F00;
 }
 
+a:visited {
+  color: #000;
+}
+
 .imagegrid {
   margin: auto;
 }
@@ -35,15 +39,38 @@ a:hover {
   font-size: 24px;
 }
 
-h1 {
+h2 {
   font-family: 'Roboto', sans-serif;
-  padding-left: 20px;
+  font-size: 18px;
+  padding-top: 70px;
+  padding-bottom: 0px;
+  color: #db4;
   text-align: center;
+  text-transform: uppercase;
 }
 
-p {
+.arrow {
+  background-image: url("../images/arrow.png");
+  margin: auto;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 12px;
+  padding-top: 0px;
+  background-size: 30px 12px;
+}
+
+.portrait {
+  margin: auto;
+  height: 250px;
+  width: 250px;
+  background-image: url("../images/portrait.png");
+  background-position: 0px 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bio {
   font-family: 'Roboto', sans-serif;
-  padding-left: 20px;
   text-align: center;
 }
 
@@ -80,6 +107,7 @@ nav {
   width: 400px;
   height: 250px;
   margin: 2px 2px;
+  background-size: 300% 300%;
 }
 
 .logo {

@@ -3,25 +3,28 @@
 
 <head>
   <title>My Homepage</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css\style.css">
+  <script type="text/javascript" src="scripts/myScript.js"></script>
 </head>
 
-<header>
-  <div class = "logo"></div>
+<body onscroll="updateParallax()">
+
+<header id="headerSplash">
+  <div class="logo"></div>
   <nav>
-    <a href = "google.com" class = "navlinks">Home</a>
-    <a href = "google.com" class = "navlinks">About Me</a>
-    <a href = "google.com" class = "navlinks">Work</a>
+    <a href="index.html" class = "navlinks">About Me</a>
+    <a href="google.com" class = "navlinks">Work</a>
+    <a href="google.com" class = "navlinks">Contact</a>
   </nav>
   <h1 class = "titletext"><span class = "titlespan">Villalobos</span></h1>
   <p class = "kicker">designer // developer // technologist</p>
 </header>
 
-<h1>Blah blah blah</h1>
-<p>Blah blah blah blah blah blah blah blah blah blah
-   blah blah blah blah blah blah blah blah blah
-   blah blah blah blah blah blah blah blah blah
-   blah blah blah blah blah blah blah blah blah</p>
+<h2>About Myself</h2>
+<div class="arrow"></div>
+<div class="portrait"></div>
+<p class="bio">I'm Pablo Villalobos, a freshman at MIT. I design, develop, and produce video games,
+mobile apps, and websites.</p>
 <table class = "imagegrid">
   <tr>
     <th><div class="g_image"
@@ -39,7 +42,8 @@
       style="background-image: url(images/landscape.jpg);background-position:center left"></div>
     </th>
     <th><div class="g_image"
-      style="background-image: url(images/landscape.jpg);background-position:center"></div>
+      style="background-image: url(images/landscape.jpg);background-position:center"
+      onclick="centerImage()"></div>
     </th>
     <th><div class="g_image"
       style="background-image: url(images/landscape.jpg);background-position:center right"></div>
@@ -57,5 +61,7 @@
     </th>
   </tr>
 </table>
+
+</body>
 
 </html>
