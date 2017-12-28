@@ -1,11 +1,13 @@
 var headerSplash;
 var portrait;
 var arrow;
+var headerStart;
 var html = document.documentElement;
 window.onload = function start (){
   headerSplash = document.getElementById('headerSplash');
   portrait = document.getElementsByClassName('portrait')[0];
   arrow = document.getElementsByClassName('arrow')[0];
+  headerStart = headerSplash.style.backgroundPosition;
 }
 
 function centerImage(){
